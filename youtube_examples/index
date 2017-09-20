@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <section id="box_container">
+            <div id="container">
+                <div id="box_1">
+                    <img src="http://www.hondahookup.com/images/100x100.jpg" alt="100 times 100 pixel foto">
+                </div>
+                <div id="box_2">
+                    <img src="http://www.hondahookup.com/images/100x100.jpg" alt="100 times 100 pixel foto">
+                </div>
+                <div id="box_3">box 3</div>
+                <div id="box_4">box 4</div>
+            </div>
+        </section>    
+    </main>
+    <footer>
+
+    </footer>
+
+</body>
+</html>
