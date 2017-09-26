@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+    margin:0px;
+    background-color: #cdcdcd;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    background-color: #2B6862;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+}
+
+#logo {
+    display: flex;
+    justify-content: ;
+    align-items: center;
+    width: 180px;
+    padding-left:30px;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+#logo a {
+    text-decoration: none; /* Remove underline on links */
+}
+i.fa.fa-github {
+    font-size: 2em;       /* increase size of the font-icon */
+}
+
+a, a:visited {
+   color:#DCDAC4;        /* change color of font-icon */
+}
+
+a:hover {
+    color:#C0BC99;
+}
+/*
+a:not(.alogo):hover {
+    color:black;
+}
+
+a.rebel:hover {
+    color:yellow;
+}
+*/
+nav i {
+    padding: 0 10px 0 0;
+}
+
+
+/* NAV START */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;           /* make the #nav use the remaining space between logo and social links div boxes */
+    align-items: center;    /* align the items/stuff inside the div box vertically (centering) */
+     text-decoration: none; /* Remove underline on links */
+}
+
+nav ul {
+    display: flex;          /* initiate flex  */
+    padding: 0;             /* clearing default padding */
+    margin: 0;              /* clearing default margin */
+    list-style: none;       /* remove bullitpoint */
+}
+
+nav a {
+    padding: 0 20px;
+    text-decoration: none; /* Remove underline on links */
+    text-transform: uppercase;
+    }
+/* NAV START */
+
+#social_link {
+    width: 180px;
+    display: flex;
+    justify-content: space-around; /* instead of just centering, its create equal space around each element compared to the size of the div-box */
+    align-items: center;
+    padding:0 30px;
+    box-sizing: border-box; /* Keeps the size of the div-box */
+}
+
+
+
+main {  
+    font-family: 'Open Sans', sans-serif;
+}
+
+section#banner {
+    background-color: #3B536F;
+    height:600px;
+}
+
+section#nine_box_container {
+    background-color: #5A3F0C;
+    height:auto;
+    display: flex;
+    justify-content: center;
+}
+
+#container {
+    display:flex;
+    flex-flow: row wrap;
+    width:570px;
+    justify-content: center;
+}
+
+#box_1, #box_2, #box_3, #box_4, #box_5, #box_6, #box_7, #box_8, #box_9 {
+    box-sizing: border-box;
+    height:280px;
+    width:180px;
+    margin:5px;
+} 
+
+#box_1 {
+    background-color: white;
+}
+#box_2 {
+    background-color: white; 
+}
+#box_3 {
+    background-color: white;  
+}
+#box_4 {
+    background-color: white; 
+}
+#box_5 {
+    background-color: white;
+}
+#box_6 {
+    background-color: white;
+}
+#box_7 {
+    background-color: white;
+}
+#box_8 {
+    background-color: white;
+}
+#box_9 {
+    background-color: white;
+}
+
+footer {
+    background-color: #524B41;
+    height: 300px;
+    
+}
