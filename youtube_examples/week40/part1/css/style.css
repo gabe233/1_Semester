@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+
 body {
     background-color: #cdcdcd;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
     /* color:#447938; */
     margin:0;
 }
@@ -13,7 +15,7 @@ header {
     align-items: center;
 }
 
-a, a:visited {
+a {
     color:#999999;
 }
 
@@ -26,11 +28,17 @@ i.fa.fa-github{
     font-size: 2em;
 } 
 
+#logo:hover {
+    font-size:1.5em;
+    opacity: 0.7;
+}
+
 #logo {
     width:180px;
     display:flex;
     box-sizing: border-box;
     padding: 0 0 0 30px;
+    transition: 0.7s ease;
 }
 
 nav {
@@ -67,6 +75,9 @@ nav ul {
 }
 
 main {
+    background-image: url("https://images3.alphacoders.com/853/thumb-1920-85305.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: #3B536F;
     position: absolute;
     left:100px;
@@ -80,6 +91,18 @@ main {
     justify-content: center;
 }
 
+#box_container img {
+    transition: 0.5s ease;
+    height:100px;
+    width:100px;
+    object-fit: cover;
+}
+
+#box_container img:hover {
+    filter: grayscale(100%);
+    
+}
+
 #container {
     display:flex;
     flex-flow: row wrap;
@@ -91,10 +114,17 @@ main {
     width:100px;
     box-sizing: border-box; 
     margin: 0 10px 10px 0;
+    
+}
+
+#box_1:hover {
+    box-shadow: 2px 2px 3px #993333; 
 }
 
 #box_1 {
     background-color: #993333;
+    transition: 0.5s ease;
+
 }
 
 #box_2 {
@@ -107,4 +137,5 @@ main {
 
 #box_4 {
     background-color: #999999;
+    opacity: 0.7;
 }
