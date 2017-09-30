@@ -219,21 +219,18 @@ footer h3{
     margin: 15px 0 0 0;
     font-size: 9px;
     display: flex;
-    flex-grow: 1;
+    flex: 1;
 }
 
-#footer_text p {
-    flex-basis:33%;
-}
 
 #footer_text p {
-    flex-basis:33%;
+    flex:1;
 }
 #footer_text p:nth-child(2) {
-    flex-basis:33%;
+    flex:1;
     text-align: center;
 }
 #footer_text p:last-child {
-    flex-basis:33%;
+    flex:1;
     text-align: right;
 }
