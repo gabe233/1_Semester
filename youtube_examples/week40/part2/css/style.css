@@ -219,7 +219,7 @@ footer h3{
     margin: 15px 0 0 0;
     font-size: 9px;
     display: flex;
-    flex: 1;
+
 }
 
 
@@ -227,10 +227,10 @@ footer h3{
     flex:1;
 }
 #footer_text p:nth-child(2) {
-    flex:1;
+    
     text-align: center;
 }
 #footer_text p:last-child {
-    flex:1;
+    
     text-align: right;
 }
