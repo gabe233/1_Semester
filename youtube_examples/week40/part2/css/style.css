@@ -79,9 +79,7 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #3B536F;
-    position: absolute;
-    left:100px;
-    width:calc(100% - 200px);
+    height: 400px;
     padding:100px;
     box-sizing: border-box; 
 }
@@ -114,7 +112,9 @@ main {
     width:100px;
     box-sizing: border-box; 
     margin: 0 10px 10px 0;
-    
+    -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    position: absolute;
 }
 
 #box_1:hover {
@@ -124,18 +124,116 @@ main {
 #box_1 {
     background-color: #993333;
     transition: 0.5s ease;
-
+    z-index:1;
+    margin:0 0 0 40px;
 }
 
 #box_2 {
     background-color: #339933;
+    z-index: 2;
+    margin: 0 0 0 120px;
 }
 
 #box_3 {
     background-color: #333399;
+    z-index: 3;
+    margin:105px 0 0 15px;
 }
 
 #box_4 {
     background-color: #999999;
     opacity: 0.7;
+    z-index:4;
+    margin: 105px 0 0 95px;
+}
+
+footer {
+    padding-top:30px;
+    color:#ededed;
+    height:300px;
+    background-color: #524B41;
+    display: flex; 
+    justify-content: center;
+}
+
+footer h3, footer p {
+    margin:0;
+    padding:0;
+}
+footer h3{
+    margin-bottom:10px;
+    color:#bbbbbb;
+    text-shadow: 1px 1px 0px #777777;
+} 
+
+#footer_container {
+    width:90%;
+    display:flex;
+    justify-content: center;
+    flex-direction:column;
+}
+
+#footer_top p, #footer_top h2 {
+    display: flex;
+    justify-content: center;
+    margin:0;
+
+}
+
+#footer_bottom {
+    margin:40px 0 0 0;
+    display: flex;
+   
+   
+}
+
+#footer_box {
+    border: 1px solid #ededed;
+    flex:1;  /* create equal space for all 4 boxes */ 
+    box-sizing: border-box; 
+    padding:20px;
+}
+
+#footer_box:not(:last-child) {
+    border-right:none;
+}
+
+#footer_social_box {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    height: 100%;
+   
+}
+
+#footer_social_box a {
+    margin-left:5px;
+    padding: 8px 0 0 12px;
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+
+}
+
+#footer_text {
+    margin: 15px 0 0 0;
+    font-size: 9px;
+    display: flex;
+    flex-grow: 1;
+}
+
+#footer_text p {
+    flex-basis:33%;
+}
+
+#footer_text p {
+    flex-basis:33%;
+}
+#footer_text p:nth-child(2) {
+    flex-basis:33%;
+    text-align: center;
+}
+#footer_text p:last-child {
+    flex-basis:33%;
+    text-align: right;
 }
