@@ -1,0 +1,58 @@
+body {
+    background-color:#dcdcdc;
+}
+
+main {
+    display: grid;
+    width:960px;
+    grid-template-columns:repeat(4, 1fr); 
+    grid-template-rows:100px 300px 200px;
+}
+
+#box1 {
+    background-color: #990000;
+}
+
+#box2 {
+    background-color: #999900;
+}
+
+#box3 {
+    background-color: #990099;
+}
+
+#box4 {
+    background-color: #009900;
+}
+
+#box5 {
+    background-color: #009999;
+}
+
+#box6 {
+    background-color: #000099;
+}
+
+#box7 {
+    background-color: #000000;
+}
+
+#box8 {
+    background-color: #999999;
+}
+
+#box9 {
+    background-color: #ffffff;
+}
+
+#box10 {
+    background-color: #330033;
+}
+
+#box11 {
+    background-color: #003300;
+}
+
+#box12 {
+    background-color: #000033;
+}
