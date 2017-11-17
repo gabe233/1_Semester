@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Document</title>
+    <script>
+        function rwdMenuFunction() {
+            var x = document.getElementById("OldSchoolTopNav");
+            if (x.className === "headerNav") {
+                x.className += " responsive";
+            } else {
+                x.className = "headerNav";
+            }
+        }
+        </script>
+</head>
+<body>
+    <header>
+        <nav class="headerNav" id="OldSchoolTopNav">
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="rwdMenuFunction()">&#9776;</a>
+        </nav>
+
+    </header>
+    <main>
+        <div id="box_a">
+            <div class="media">
+                <div class="img">
+                    <img src="http://placehold.it/250x250" alt="Placeholder">
+                </div>
+                    <h2 class="title"><a href="#">This is my title</a></h2>
+                <div class="content">
+                 <p>Lorem ipsusectetur adipiscing elit. Duis vehicula vitae ligula sit amet maximus. Nunc auctor neque ipsum, ac porttitor elit lobortis ac. Vivamus ultrices sodales tellus et aliquam.</p>
+                </div>
+                <div class="footer">
+                    An optional footer goes here.
+                </div>
+            </div>
+        </div>
+        <div id="box_b">
+            <div class="media">
+                <div class="img">
+                    <img src="http://placehold.it/250x250" alt="Placeholder">
+                </div>
+                    <h2 class="title">This is my title</h2>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vehicula vitae ligula sit amet maximus. Nunc auctor neque ipsum, ac porttitor elit lobortis ac. Vivamus ultrices sodales tellus et aliquam.</p>
+                </div>
+                <div class="footer">
+                    An optional footer goes here.
+                </div>
+            </div>
+        </div>
+        <div id="box_c">
+            <div id="box_c_1"></div>
+            <div id="box_c_2">
+                <h1>Old school Formel 1</h1>
+                <p>Much Powah, Much wow!</p>
+            </div>
+        </div>
+    </main>
+    <aside></aside>
+    <footer>
+        <svg viewBox="0 0 100% 100%" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+            <defs>
+                <mask id="mask" x="0" y="0" width="100%" height="100%">
+                    <rect x="0" y="0" width="100%" height="100%" />
+                    <text x="30%" y="30%">Hello Yoda</text>
+                    <text x="60%" y="95%">Multimedia</text>
+                </mask>
+            </defs>
+            <rect x="0" y="0" width="100%" height="100%" />
+        </svg>
+        <video id="video" autoplay="autoplay" muted="muted" preload="auto" loop="loop">
+                <source src="http://mazwai.com/system/posts/videos/000/000/183/original/a_sky_full_of_stars.mp4?1442362275" type="video/mp4">
+                <source src="http://mazwai.com/system/posts/videos/000/000/183/original/a_sky_full_of_stars.mp4?1442362275" type="video/webm">    
+        </video>
+    </footer>
+</body>
+</html>
